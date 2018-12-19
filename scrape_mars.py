@@ -61,7 +61,7 @@ def scrape_info():
     #df_marsT.columns=['1','2','3','4','5','6','7','8','9']
     df_mars.set_index( 'fact',drop=True, inplace = True)
     #df_marsT.head()
-    m_dict = df_mars.to_dict()
+    m_dict = df_mars.to_html(escape=False)
 
 
     url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"

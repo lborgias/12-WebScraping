@@ -37,7 +37,7 @@
       </div>
       <div class="col-md-4">
        <h3>Mars Facts</h3>
-      {{mars.df_mars}}
+      {{mars.df_mars|safe}}
      </div>
   <div class="row">
       {% for hemi in mars.hemisphere_image_urls%}
